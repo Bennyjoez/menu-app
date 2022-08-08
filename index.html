@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <script src="./index.js" defer></script>
     <title>Menu</title>
 </head>
@@ -19,7 +20,17 @@
                 <li><button id="Dinner" class="selectors">Dinner</button></li>
                 <li><button id="Drinks" class="selectors">Drinks</button></li>
             </ul>
+            <div class="cart">
+                <span class="cart-icon">
+                    <i id="cart" class="fa-solid fa-cart-plus"></i>
+                </span>
+                <!-- the cart items is the number shown as a superscript of the cart icon -->
+                <div id="cart-items" class="cart-items">
+                    0
+                </div>
+            </div>
         </nav>
+        
     </header>
     <main>
         <div class="container">
@@ -114,7 +125,28 @@
                     <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
         </div>
-       
+        <!-- start of the cart overlay -->
+        <div id="cart-overlay">
+                <h2>Ordered Meals                 
+                    <span id="close-cart">
+                        <i class="fas fa-window-close"></i>
+                    </span></h2>
+                <div class="cart-titles">
+                    <div>Pic</div>
+                    <div>Name</div>
+                    <div>Qty</div>
+                    <div>Price</div>
+                    <div></div>
+                </div>
+            <div id="ordered-items">
+                <!-- individual items of the cart -->
+            </div>
+            <hr>
+            <div class="total">
+                <span class="title">Total Cost: </span>
+                <span id="total-value">$0</span>
+            </div>
+        </div>
     </main>
 </body>
 </html>

@@ -67,7 +67,7 @@ for(let i = 0; i < selectors.length; i++) {
             let allArr = Array.from(all); 
             for(let each of allArr) {
                 each.style.display = "flex"
-                each.style.height = '20vh'
+                each.style.height = 'fitContent'
             }
         }
     })

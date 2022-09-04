@@ -266,4 +266,31 @@ closeBtn.addEventListener('click', function(e){
 })
 
 
-
+// Alerting the day
+const day = new Date().getDay();
+    // iterating the dates to set the name of the day
+switch(day) {
+    case 0: 
+        alert('Today is Sunday. Welcome.')
+        break;
+    case 1: 
+        alert('Today is Monday. Enjoy our Service.')
+        break;
+    case 2: 
+        alert('Today is Tuesday. What will you be having?')
+        break;
+    case 3: 
+        alert('Today is Wednesday. Have a good day!')
+        break;
+    case 4: 
+        alert('Today is Thursday. Welcome.')
+        break;
+    case 5: 
+        alert('Today is Friday. The weekend is her with us.')
+        break;
+    case 6: 
+        alert('Today is Saturday. You need to relax.')
+        break;
+    default:
+        alert('Have a look at our Menu.')
+}
